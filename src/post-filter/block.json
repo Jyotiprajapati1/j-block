@@ -1,0 +1,105 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "experimental-block/post-filter",
+	"version": "0.1.0",
+	"title": "Post Filter",
+	"description": "Allows users to filter posts based on specific categories or tags, providing a streamlined content discovery experience.",
+	"attributes": {
+		"contentType": {
+			"type": "string",
+			"default": "catIds"
+		},
+		"postCount": {
+			"type": "number",
+			"default": 9
+		},
+		"categoryIds": {
+			"type": "string",
+			"default": ""
+		},
+		"tagIds": {
+			"type": "string",
+			"default": ""
+		},
+		"showThumbnail": {
+			"type": "boolean",
+			"default": true
+		},
+		"design": {
+			"type": "string",
+			"default": "one"
+		},
+		"layout": {
+			"type": "string",
+			"default": "grid"
+		},
+		"showAuthor": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"showExcert": {
+			"type": "boolean",
+			"default": true
+		},
+		"gridColumn": {
+			"type": "number",
+			"default": 3
+		},
+		"tabAlign": {
+			"type": "string",
+			"default": ""
+		},
+		"textColor": {
+			"type": "string",
+			"default": ""
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": ""
+		},
+		"activeBackgroundColor": {
+			"type": "string",
+			"default": ""
+		},
+		"activeTextColor": {
+			"type": "string",
+			"default": ""
+		},
+		"borderColor": {
+			"type": "string",
+			"default": ""
+		},
+		"fontSize": {
+			"type": "number",
+			"default": 16
+		},
+		"borderSize": {
+			"type": "number",
+			"default": 3
+		},
+		"radius": {
+			"type": "number",
+			"default": 3
+		},
+		"paddingHorizontal": {
+			"type": "number",
+			"default": 3
+		},
+		"paddingVertical": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"supports": {
+		"align": true
+	},
+	"textdomain": "post-filter",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "experimental-block/star-icon",
+	"version": "0.1.0",
+	"title": "Rating Star",
+	"description": "Displays a star rating, perfect for showcasing user ratings or reviews.",
+	"attributes": {
+		"textAlign" : {
+			"type" : "string",
+			"default" : "left"
+		},
+		"numStar" : {
+			"type" : "number",
+			"default" : 3
+		}
+	},
+	"supports": {
+		"html": false,
+		"color": {
+			"text": true,
+			"background": false
+		},
+		"align": true,
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"textdomain": "icon-picker",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

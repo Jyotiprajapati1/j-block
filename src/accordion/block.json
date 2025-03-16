@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "experimental-block/accordion",
+  "title": "Accordion",
+  "description": "Adds collapsible content sections for a clean and organized presentation of information.",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "slidesPerPage": {
+      "type": "number",
+      "default": 1
+    },
+    "controls": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplayDelay": {
+      "type": "string",
+      "default": "3000"
+    },
+    "dot": {
+      "type": "boolean",
+      "default": false
+    },
+    "dotPosition": {
+      "type": "string",
+      "default": "horizontal-inside-slider-bottom-center"
+    },
+    "axis": {
+      "type": "string",
+      "default": "horizontal"
+    },
+    "slideBy": {
+      "type": "number",
+      "default": 1
+    },
+    "center": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "textdomain": "accordion",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

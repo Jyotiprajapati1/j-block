@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "experimental-block/counter",
+	"version": "0.1.0",
+	"title": "Counter",
+	"icon": "clock",
+	"description": "Shows a numeric counter that can be used to highlight statistics, milestones, or achievements.",
+	"usesContext": [ "postId", "postType", "queryId" ],
+	"attributes": {
+		"textAlign" : {
+			"type" : "string",
+			"default" : "left"
+		},
+		"counter": {
+			"type": "string",
+			"default": "99"
+		},
+		"delayTime":{
+			"type":"number",
+			"default":10
+		}
+	},
+	"supports": {
+		"html": false,
+		"color": { 
+        	"background": false,
+        	"color": true 
+		},
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"textdomain": "counter",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
+

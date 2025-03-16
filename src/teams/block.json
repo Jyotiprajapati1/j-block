@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "experimental-block/teams",
+	"title": "Teams",
+	"description": "Showcases team members with information such as name, position, and social links.",
+	"attributes": {
+		"numColumn" : {
+			"type" : "number",
+			"default" : 2
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"align": [ "wide", "full" ],
+		"html": false
+	},
+	"textdomain": "teams",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

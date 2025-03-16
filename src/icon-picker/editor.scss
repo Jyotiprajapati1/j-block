@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-templates {
+	border: 1px dotted #f00;
+}
+
+.rfipdropdown--default.rfipdropdown--open {
+    right: 0px !important;
+    width: 100%;
+    max-width: 60%;
+    position: fixed;
+    /* height: 66%; */
+    left: 0;
+    /* right: 0; */
+    margin: auto;
+    top: 100px;
+}

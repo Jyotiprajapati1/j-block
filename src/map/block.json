@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "experimental-block/map",
+	"version": "0.1.0",
+	"title": "Map",
+	"description": "Displays geographical locations interactively, helping users visualize destinations or routes.",
+	"supports": {
+		"html": false,
+    "align": true
+	},
+	"textdomain": "map-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+    "location": {
+      "type": "string",
+      "default": ""
+    },
+    "longitude": {
+      "type": "string",
+      "default": ""
+    },
+    "latitude": {
+      "type": "string",
+      "default": ""
+    },
+    "zoom": {
+      "type": "number",
+      "default": 10
+    },
+    "mapHeight": {
+      "type": "number",
+      "default": 400
+    },
+    "maps": {
+      "type": "string",
+      "default": "googleMap"
+    },
+    "apiKey": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

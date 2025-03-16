@@ -1,0 +1,38 @@
+{
+	"name": "experimental-block",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.12.0"
+	},
+	"dependencies": {
+		"@fonticonpicker/react-fonticonpicker": "^1.2.0",
+		"@lemonadejs/tabs": "^2.2.0",
+		"@splidejs/react-splide": "^0.7.12",
+		"@wordpress/api-fetch": "^7.15.1",
+		"accordion-js": "^3.3.4",
+		"classnames": "^2.5.1",
+		"jquery": "^3.7.1",
+		"jquery.marquee": "^1.6.0",
+		"masonry-layout": "^4.2.2",
+		"progressbar.js": "^1.1.1",
+		"prop-types": "^15.8.1",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-fast-marquee": "^1.6.5",
+		"react-responsive-masonry": "^2.4.1",
+		"react-transition-group": "^4.4.5"
+	}
+}

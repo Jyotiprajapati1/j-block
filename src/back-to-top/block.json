@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "experimental-block/back-to-top",
+  "version": "0.1.0",
+  "title": "Back To Top Block",
+  "description": "A floating button that takes users back to the top of the page with a single click.",
+  "example": {},
+  "supports": {
+    "html": false,
+	"align": true
+  },
+  "textdomain": "back-to-top",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "icons": {
+      "type": "string",
+      "default": "cornerRightUp"
+    },
+    "iconSize": {
+      "type": "number",
+      "default": 20
+    },
+    "iconColor": {
+      "type": "string",
+      "default": "#111111"
+    },
+    "iconBackground": {
+      "type": "string",
+      "default": ""
+    },
+    "strokeWidth": {
+      "type": "number",
+      "default": 2
+    },
+    "border":{
+      "type": "number",
+      "default": 0
+    },
+    "borderRadius":{
+      "type": "number",
+      "default": 0
+    },
+    "borderColor":{
+      "type": "string",
+      "default": ""
+    },
+    "paddingHorizontal": {
+      "type": "number",
+      "default": 16
+    },
+    "paddingVertical": {
+      "type": "number",
+      "default": 16
+    }
+  }
+}

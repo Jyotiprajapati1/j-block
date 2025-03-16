@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "experimental-block/text-marquee",
+  "version": "0.1.0",
+  "title": "Text Marquee",
+  "description": "Displays scrolling text, useful for announcements or promotional messages.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true,
+    "typography": {
+      "textAlign": true
+    }
+  },
+  "textdomain": "text-marquee",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "inputs": {
+      "type": "string",
+      "default": ""
+    },
+    "fontSize": {
+      "type": "number"
+    },
+    "fontFamily": {
+      "type": "string",
+      "default": ""
+    },
+    "fontAppearance": {
+      "type": "string",
+      "default": ""
+    },
+    "fontWeight": {
+      "type": "string",
+      "default": ""
+    },
+    "letterSpacing": {
+      "type": "number",
+      "default": 1
+    },
+    "decoration": {
+      "type": "string",
+      "default": ""
+    },
+    "letterCase": {
+      "type": "string",
+      "default": ""
+    },
+    "speed": {
+      "type": "number",
+      "default": 10
+    },
+    "pauseOnHover": {
+      "type": "boolean",
+      "default": true
+    },
+    "inputGap":{
+      "type": "number",
+      "default": 10
+    },
+    "textColor":{
+      "type": "string",
+      "default": ""
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "experimental-block/post-list-grid",
+	"version": "0.1.0",
+	"title": "Post List/Grid",
+	"description": "Organizes posts in either a list or grid layout, offering flexibility for displaying content in different styles.",
+	"attributes": {
+		"blockId": {
+			"type": "string",
+			"default": ""
+		},
+		"contentType": {
+			"type": "string",
+			"default": "recentPost"
+		},
+		"postCount": {
+			"type": "number",
+			"default": 5
+		},
+		"postIds": {
+			"type": "string",
+			"default": ""
+		},
+		"categoryIds": {
+			"type": "string",
+			"default": ""
+		},
+		"tagIds": {
+			"type": "string",
+			"default": ""
+		},
+		"showLoadMore": {
+			"type": "boolean",
+			"default": true
+		},
+		"showThumbnail": {
+			"type": "boolean",
+			"default": true
+		},
+		"showAuthor": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"layout": {
+			"type": "string",
+			"default": "grid"
+		},
+		"design": {
+			"type": "string",
+			"default": "one"
+		},
+		"postByCategory": {
+			"type": "boolean",
+			"default": true
+		},
+		"postByTags": {
+			"type": "boolean",
+			"default": false
+		},
+		"postByQuery": {
+			"type": "boolean",
+			"default": false
+		},
+		"showExcert": {
+			"type": "boolean",
+			"default": true
+		},
+		"gridColumn": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"align": true,
+		"html": false
+	},
+	"textdomain": "post-list-grid",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

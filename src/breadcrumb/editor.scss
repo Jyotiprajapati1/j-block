@@ -1,0 +1,17 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .experimental-add-to-wishlists{
+    color: #f83531 !important;
+    visibility: hidden;
+ }
+
+ .experimental-add-to-wishlists i{
+    visibility: initial;
+ }
+
+ .alignwide .wp-block-experimental-breadcrumb{
+   max-width: initial !important;
+}

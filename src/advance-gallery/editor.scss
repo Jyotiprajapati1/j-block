@@ -1,0 +1,64 @@
+
+.col-1 .block-editor-block-list__layout{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr) !important;
+  gap: 16px;
+}
+
+.col-2 .block-editor-block-list__layout{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.col-3 .block-editor-block-list__layout{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.col-4 .block-editor-block-list__layout{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.col-5 .block-editor-block-list__layout{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+.col-6 .block-editor-block-list__layout{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+
+/* Making sure that each image element fills its column  */
+.col-1 .block-editor-block-list__layout figure,
+.col-2 .block-editor-block-list__layout figure,
+.col-3 .block-editor-block-list__layout figure,
+.col-4 .block-editor-block-list__layout figure,
+.col-5 .block-editor-block-list__layout figure,
+.col-6 .block-editor-block-list__layout figure{
+  width: 100%;
+}
+
+/**********************************************************
+********************image size*****************************
+***********************************************************/
+// .wp-block-experimental-block-advanced-gallery .large .block-editor-block-list__layout img{ 
+//   width: 1024px;
+//   height: auto;
+// }
+
+// .wp-block-experimental-block-advanced-gallery .thumbnail .block-editor-block-list__layout img{ 
+//   width: 150px;
+//   height: auto;
+// }
+
+// .wp-block-experimental-block-advanced-gallery .medium .block-editor-block-list__layout img{ 
+//   width: 300px;
+//   height: auto;
+// }

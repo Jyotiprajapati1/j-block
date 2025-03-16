@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "experimental-block/progress-bar",
+	"version": "0.1.0",
+	"title": "Progress Bar",
+	"icon": "minus",
+	"description": "Visually represents the progress of a task or goal, ideal for tracking completion rates.",
+	"usesContext": [
+		"postId",
+		"postType",
+		"queryId"
+	],
+	"attributes": {
+		"textAlign": {
+			"type": "string",
+			"default": "left"
+		},
+		"progressBarType": {
+			"type": "string",
+			"default": "line"
+		},
+		"progressNum": {
+			"type": "number",
+			"default": 95
+		},
+		"progressBarColor": {
+			"type": "string",
+			"default": "#FFEA82"
+		},
+		"progressBarPathColor": {
+			"type": "string",
+			"default": "#eee"
+		},
+		"progressBarWidth": {
+			"type": "number",
+			"default": 100
+		},
+		"progressBarStrokeWidth": {
+			"type": "number",
+			"default": 5
+		},
+		"progressBarTrialWidth": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": true,
+		"alignWide": false
+	},
+	"textdomain": "progress-bar",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

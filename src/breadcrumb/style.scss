@@ -1,0 +1,31 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+#experimental-breadcrumb-block{
+    a{
+        text-decoration: none;
+    }
+    .trail-browse{
+        display: none;
+    }
+    .trail-items{
+        list-style: none;
+        padding-left: 0px;
+        li {
+            display: inline-block;
+        }
+        .trail-item::after{
+            padding: 0 5px;
+        }
+        .trail-end::after{
+            content: "" !important;
+        }
+    }
+}
+
+.alignwide #experimental-breadcrumb-block{
+    max-width: initial !important;
+}

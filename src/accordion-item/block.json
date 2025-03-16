@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "experimental-block/accordion-item",
+  "title": "Accordion Item",
+  "parent": ["experimental-block/accordion"],
+  "description": "Single Slide block to be used with Slider block",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "accordion-item",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

@@ -1,0 +1,84 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "experimental-block/post-ticker",
+	"version": "0.1.0",
+	"title": "Post Ticker",
+	"description": "Scrolls through posts or announcements in a ticker format, grabbing attention with continuous movement.",
+	"attributes": {
+		"blockId": {
+			"type": "string"
+		},
+		"postTickerBackground": {
+			"type": "string",
+			"default": "#efefef"
+		},
+		"postTextColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"breakingNewLabel": {
+			"type": "string",
+			"default": "Breaking News"
+		},
+		"breakingNewColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"breakingNewBackground": {
+			"type": "string",
+			"default": "#f92121"
+		},
+		"contentType": {
+			"type": "string",
+			"default": "recentPost"
+		},
+		"postCount": {
+			"type": "number",
+			"default": 5
+		},
+		"postIds": {
+			"type": "string",
+			"default": ""
+		},
+		"categoryIds": {
+			"type": "string",
+			"default": ""
+		},
+		"tagIds": {
+			"type": "string",
+			"default": ""
+		},
+		"showThumbnail": {
+			"type": "boolean",
+			"default": true
+		},
+		"slideSpeed": {
+			"type": "number",
+			"default": 5000
+		},
+		"pauseOnHover": {
+			"type": "boolean",
+			"default": true
+		},
+		"gapBetween": {
+			"type": "number",
+			"default": 20
+		},
+		"enableSvg": {
+			"type": "boolean",
+			"default": true
+		},
+		"svgInput": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"align": true
+	},
+	"textdomain": "post-ticker",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

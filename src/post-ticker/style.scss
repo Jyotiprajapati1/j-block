@@ -1,0 +1,59 @@
+[id^="experimental-block-post-ticker-"].experimental-block-post-ticker{
+	display: flex;
+	background: #efefef;
+	padding-right: 5px;
+	align-items: center;
+ }
+
+ [id^="experimental-block-post-ticker-"] .post-ticker-marquee {
+    flex: 1;
+    opacity: 0;               /* Start fully transparent */
+    visibility: hidden;   
+	height: 0px;    /* Start as hidden */
+    animation: fadeIn 1s ease-in forwards; /* Set animation */
+    animation-delay: 1s;      /* Delay before the animation starts */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+		height: auto;           /* Fully transparent */
+        visibility: hidden;   /* Hidden */
+    }
+    99% {
+        opacity: 0;    
+		height: auto;        /* Still transparent */
+        visibility: hidden;   /* Still hidden */
+    }
+    100% {
+        opacity: 1;           /* Fully opaque */
+		height: auto; 
+        visibility: visible;  /* Now visible */
+    }
+}
+
+[id^="experimental-block-post-ticker-"].experimental-block-post-ticker .experimental-block-post-ticker-breaking-news{
+    background: red;
+    padding: 15px 20px;
+    color: #fff;
+    margin-right: 5px;
+ }
+
+ [id^="experimental-block-post-ticker-"].experimental-block-post-ticker .experimental-block-post-ticker-item {
+	display: flex;
+	margin: 0px 20px;
+	align-items: center;
+ }
+
+ [id^="experimental-block-post-ticker-"].experimental-block-post-ticker .experimental-block-post-ticker-item img{
+	width: 62px;
+	margin-right: 20px;
+	height: 40px;
+	vertical-align: middle;
+ }
+
+ [id^="experimental-block-post-ticker-"].experimental-block-post-ticker .experimental-block-post-ticker-item p{
+	font-size: 16px;
+    font-weight: 500;
+ }

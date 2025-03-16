@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "experimental-block/advanced-gallery",
+  "version": "0.1.0",
+  "title": "Advanced Gallery",
+  "description": "Showcases an image gallery with advanced options for layout, lightbox effects, and customization.",
+  "supports": {
+    "html": true,
+    "anchor": true,
+    "align": true,
+    "spacing": {
+      "padding": true
+    }
+  },
+  "textdomain": "advanced-gallery",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "images": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "number" },
+          "url": { "type": "string" },
+          "alt": { "type": "string" }
+        }
+      }
+    },
+    "column": {
+      "type": "number",
+      "default": 1
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "medium"
+    },
+    "linkTo": {
+      "type": "string",
+      "default": "none"
+    },
+    "masonry": {
+      "type": "boolean",
+      "default": 0
+    },
+    "imageHeight": {
+      "type": "number",
+      "default": 100
+    },
+    "imageGap": {
+      "type": "number",
+      "default": 10
+    },
+    "marginBottom": {
+      "type": "number",
+      "default": 10
+    },
+    "enablePopup": {
+      "type": "boolean",
+      "default": 0
+    }
+  }
+}

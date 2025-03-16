@@ -1,0 +1,35 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .experimental-block-post-ticker{
+	display: flex;
+	background: #efefef;
+	padding-right: 5px;
+	align-items: center;
+ }
+
+ .experimental-block-post-ticker .experimental-block-post-ticker-breaking-news{
+    background: red;
+    padding: 15px 20px;
+    color: #fff;
+    margin-right: 5px;
+ }
+
+ .experimental-block-post-ticker .experimental-block-post-ticker-item {
+	display: flex;
+	margin: 0px 20px;
+	align-items: center;
+ }
+
+ .experimental-block-post-ticker .experimental-block-post-ticker-item img{
+	width: 62px;
+	margin-right: 20px;
+ }
+
+ .experimental-block-post-ticker .experimental-block-post-ticker-item p{
+	font-size: 16px;
+    font-weight: 500;
+ }

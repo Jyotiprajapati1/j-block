@@ -1,0 +1,18 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.back-to-top-icon {
+    display: none;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    cursor: pointer;
+   
+}
+
+.back-to-top-icon.is-visible {
+  display: block;
+}

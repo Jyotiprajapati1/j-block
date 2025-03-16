@@ -1,0 +1,107 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "experimental-block/social-share",
+  "version": "0.1.0",
+  "title": "Social Share",
+  "description": "Block to share in social media",
+  "supports": {
+    "html": false,
+    "align": true
+  },
+  "textdomain": "advanced-gallery",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "enablelabel": {
+      "type": "boolean",
+      "default": true
+    },
+    "facebook": {
+      "type": "boolean",
+      "default": true
+    },
+    "twitter": {
+      "type": "boolean",
+      "default": false
+    },
+    "gmail": {
+      "type": "boolean",
+      "default": false
+    },
+    "whatsApp": {
+      "type": "boolean",
+      "default": false
+    },
+    "linkedIn": {
+      "type": "boolean",
+      "default": false
+    },
+    "diigo": {
+      "type": "boolean",
+      "default": false
+    },
+    "reddit": {
+      "type": "boolean",
+      "default": false
+    },
+    "tumblr": {
+      "type": "boolean",
+      "default": false
+    },
+    "pinterest": {
+      "type": "boolean",
+      "default": false
+    },
+    "viber": {
+      "type": "boolean",
+      "default": false
+    },
+    "snapchat": {
+      "type": "boolean",
+      "default": false
+    },
+    "iconColor": {
+      "type": "string",
+      "default": ""
+    },
+    "textColor": {
+      "type": "string",
+      "default": ""
+    },
+    "iconSize": {
+      "type": "number",
+      "default": 20
+    },
+    "fontSize": {
+      "type": "number",
+      "default": 16
+    },
+    "borderColor": {
+      "type": "string",
+      "default": ""
+    },
+    "borderSize": {
+      "type": "number",
+      "default": 1
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 1
+    },
+    "paddingHorizontal": {
+      "type": "number",
+      "default": 16
+    },
+    "paddingVertical": {
+      "type": "number",
+      "default": 16
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "experimental-block/slider",
+	"title": "Slider",
+	"description": "A customizable slider block to create image or content sliders.",
+	"attributes": {
+		"blockId": {
+			"type": "string"
+		},
+		"perPage": {
+			"type": "number",
+			"default": 1
+		},
+		"autoPlay": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDots": {
+			"type": "boolean",
+			"default": false
+		},
+		"showArrow": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"align": [ "wide", "full" ],
+		"html": false
+	},
+	"textdomain": "slider",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

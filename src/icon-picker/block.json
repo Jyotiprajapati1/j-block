@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "experimental-block/icon-picker",
+	"version": "0.1.0",
+	"title": "Icon Picker",
+	"icon": "info",
+	"description": "Provides an icon selection tool to customize elements with a variety of icons.",
+	"attributes": {
+		"textAlign" : {
+			"type" : "string",
+			"default" : "left"
+		},
+		"icon" : {
+			"type" : "string",
+			"default" : "fas fa-user"
+		},
+		"linkURL" : {
+			"type" : "string",
+			"default" : ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "icon-picker",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

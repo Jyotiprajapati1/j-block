@@ -1,0 +1,17 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-social-share a {
+	display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.wp-block-social-share{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

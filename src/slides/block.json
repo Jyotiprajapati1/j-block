@@ -1,0 +1,14 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "experimental-block/slides",
+	"title": "Slide",
+	"parent": [ "experimental-block/slider" ],
+	"description": "Dynamic and customizable slide item for showcasing images or content.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "slides",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}
